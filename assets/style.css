@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    /* font-family: sans-serif; */
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+.menu-icon{display: none;} /* menu btn*/
+
+.main-container  .bg-view{
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 90vh;
+    z-index: -99;
+    opacity: 0.9;
+}
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+.navbar-section .logo img{
+    width: 100px;
+}
+.nav-bar ul{
+    display: flex;
+    padding-top: 1.2rem;}
+.nav-bar ul li{
+    margin-right: 3rem;
+    list-style: none;
+    
+}
+.nav-bar ul li a{
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.nav-bar ul li a:hover{
+    color: #49cbda;
+    transition: .5s;
+}
+
+/* MAIN SECTION START */
+
+.main-section{
+    margin-top:1rem ;
+    padding: 0 4rem;
+}
+.main-f-row{
+    display: flex;
+    justify-content: space-between;
+}
+.main-f-row .f-row-head{
+    width: 50%;
+}
+.main-f-row .f-row-head h1{
+    margin: 3rem 0;
+    color: #fff;
+    font-size: 2.5rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.main-f-row .f-row-head p{
+    color: rgb(194, 192, 192);
+    width: 400px;
+}
+.f-row-img {
+    width: 50%;
+}
+.f-row-img img{
+    position: relative;
+    top: -5rem;
+}
+
+.main-s-row{
+    display: flex;
+    justify-content: space-between;
+}
+.s-row-btn button{
+    padding: 1rem 1.4rem;
+    background-color: #8ad8e0;
+    border: none;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+/* .s-row-btn button:nth-child(1){background-color: #8ad8e0;} */
+.s-row-btn button:nth-child(1) a{
+    color: #39575a;
+    font-weight: 600;
+}
+.s-row-btn button:nth-child(2){
+    background-color: transparent;
+    border: 2px solid #8ad8e0;
+}
+.s-row-btn button:nth-child(2):hover{
+    background-color: #8ad8e0;
+    transition: .9s;
+}
+.s-row-btn button:nth-child(2):hover a{
+    color: #39575a;
+}
+.s-row-btn button:nth-child(2) a{
+    color: #49cbda;
+    font-weight: 600;
+}
+
+.s-row-timer{
+    text-align: center;
+    position: relative;
+    top: -4rem;
+    left: -10rem;
+    border: 3px solid #8ad8e0;
+    padding: 2em;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.s-row-timer h2{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.s-row-timer p{
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
