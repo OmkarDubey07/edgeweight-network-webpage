@@ -1,4 +1,6 @@
-//                              for main timer coming soon
+//                              TIMER TO COMING SOON SECTION
+
+
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
 
@@ -28,4 +30,59 @@ var countdownfunction = setInterval(function() {
   }
 }, 1000);
 
-                            // end here
+                            // TIMER SECTION  end here
+
+
+                      // BRAND NAME SLIDER
+
+const sliderCont = document.getElementById("slider");
+const leftBtn = document.querySelector("#left-btn button");
+const rightBtn = document.querySelector("#right-btn button");
+
+// show the particular slider images
+
+let left = 3 ;
+let  right = 5;
+function show(){
+    for (let i =left ; i <=right ; i++){
+      document.getElementById("c"+i).style.display="inline-block";
+    }
+}
+
+ // on click left button 
+
+leftBtn.addEventListener('click' , function()
+  {
+    if (left <=3 && right <=7)
+    {
+      document.getElementById("c"+left).style.display= "none";
+      left+= 1;
+      right+= 1;
+
+      for (let i =left ; i <=right ; i++){
+        document.getElementById("c"+i).style.display="inline-block";
+      }
+    }
+    else return;
+  });
+
+  // onn click  right button
+
+  rightBtn.addEventListener('click' , function()
+  {
+    if (left >=3 && right >=3)
+    {
+      document.getElementById("c"+right).style.display= "none";
+      left-= 1;
+      right-= 1;
+
+      for (let i =left ; i <=right ; i++){
+        document.getElementById("c"+i).style.display="inline-block";
+      }
+    }
+    else return;
+  });
+
+                            // slider part end
+
+  
