@@ -85,4 +85,5 @@ leftBtn.addEventListener('click' , function()
 
                             // slider part end
 
-  
+
+

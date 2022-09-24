@@ -9,7 +9,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     /* font-family: sans-serif; */
-    background-color: aliceblue;
+    background-color: #fff;
 }
 a{
     text-decoration: none;
@@ -21,7 +21,7 @@ a{
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
-    height: 90vh;
+    /* height: 90vh; */
     z-index: -99;
     opacity: 0.9;
 }
@@ -122,7 +122,7 @@ a{
     top: -4rem;
     left: -10rem;
     border: 3px solid #8ad8e0;
-    padding: 2em;
+    padding: 2rem 2rem;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -136,6 +136,7 @@ a{
     color: #fff;
     font-family: sans-serif;
     letter-spacing: 1px;
+    font-size: 30px;
 }
 
                         /*  OUR SERVICES */
@@ -155,6 +156,7 @@ a{
     padding: 5rem 4rem;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 .service-heading p{
     margin: 1rem 0;
@@ -167,6 +169,7 @@ a{
     margin-top: 5rem;
     flex-wrap: wrap;
     gap: 20px;
+    /* column-gap: px; */
 }
 .service-menu .dev{
     width: 15rem ;
@@ -192,7 +195,7 @@ a{
 }
 
                 /*  MEET OUR TEAM */
-                                                /* WHY ARMANE */
+                                
 .team-section {
     padding: 5rem 4rem;
 }
@@ -244,7 +247,7 @@ a{
 
 .partner-section{
     margin-top:2rem ;
-    padding: 5rem 4rem;
+    padding: 3rem 1rem;
 }
 .partner-section h2{
     text-align: center;
@@ -267,7 +270,6 @@ a{
 .child img{
     height: 100px;
     width: 200px;
-
 }
 
 #left-btn{
@@ -373,7 +375,6 @@ a{
                         /* FOOTER SECTION */
 
 .footer-section{
-    /* height: 30rem; */
     background-color: #03045e;
     color: #FFF;
     padding: 10rem 4rem 1rem;
@@ -430,3 +431,199 @@ a{
 }
 
 /* done for desktop */
+
+
+
+/* 
+                    FOR LARGE SCREEN 1200PX
+*/
+
+@media only screen and (max-width : 1200px) {
+    
+    .f-row-img img{
+        width: 520px;
+        top: -3rem;
+    }
+    .s-row-timer{
+        left: -1rem;
+        top: -3rem;
+        padding: 2rem 1.7rem;
+    }
+    .s-row-btn button{
+        margin-top: 2rem;
+    }
+    /* CONTACT US  */
+    .contact-us{
+        padding: 2rem;
+    }
+    .child img{
+        height: 95px;
+        width: 180px;    
+    }
+    .contact-box{
+        padding: 3.5rem;
+    }
+}
+
+
+/* 
+                    FOR LARGE SCREEN 992PX
+*/
+
+@media only screen and (max-width : 992px) {
+    
+    .navbar-section{
+        padding: 2rem 3rem;
+    }
+    .nav-bar ul li{
+        margin-right: 1.5rem;
+    }
+    .main-section{
+        padding: 0 2rem;
+    }
+    .main-f-row .f-row-head h1{
+        margin: 2rem 0; 
+        font-size: 2rem;
+    }
+    .main-f-row .f-row-head p{
+        width: 300px;
+        font-size: 14px;
+    }
+    .f-row-img img{
+        width: 400px;
+        top: -1rem;                                                                                                                                     
+    }
+    .s-row-btn button{
+        padding: 0.8rem 1rem;
+    }
+    .s-row-timer{
+        padding: 1.5rem 1.2rem;
+        left: 0;
+        top: -1;
+    }
+    .s-row-timer h2{
+        margin-bottom: 0.5rem;
+    }
+    .s-row-timer p{
+        font-size: 0.8rem;
+    }
+
+    /* OUR SERVICES */
+
+    .service-bg{display: none;}
+    .service-section{
+        margin-top: 4rem;
+        padding: 4rem 2rem;
+    }
+    .service-menu{
+        margin-top: 4rem;
+    }
+    .service-menu .dev{
+        width: 13rem;
+    }
+    .service-menu .dev img{
+        width: 80px;
+        height: 80px;
+    }
+    .service-menu .dev p{
+        font-size: 15px;
+    }
+
+    /* our partners */
+    .partner-section{
+        padding: 1rem 1rem;
+    }
+    .child img{
+        height: 80px;
+        width: 150px;
+    }
+    .arrow-icon{
+        font-size: 0.8rem;
+        padding: 3px 3px 1px 3px;
+    }
+    /* contact-us */
+    .contact-us{
+        padding: 2.5rem 2rem;
+    }
+    .contact-us h3{
+        margin-bottom: 2rem;
+    }
+    .contact-box{
+        padding: 2rem;
+    }
+    .contact-form input{
+        padding-right: 6rem;
+    }
+    .contact-form input[ placeholder="Message" ]{
+        padding-right: 6rem;
+    }
+
+    /* footer section */
+
+    .footer-section{
+        padding: 8rem 1.5rem 1rem;
+    }
+   
+}
+
+
+/* 
+                    FOR TABLET SCREEN 768PX
+*/
+
+@media only screen and (max-width : 768px) {
+    
+    .nav-bar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        color: #fff;
+        font-size: 2.1rem;
+        padding-top: 15px;
+    }
+
+    
+    .main-f-row .f-row-head h1{
+        font-size: 1.8rem;
+    }
+    .main-f-row .f-row-head p{
+        /* display: none; */
+        font-size: 12px;
+        width: 250px;
+    }
+    .f-row-img img{
+        width:300px;
+        top: 1rem;
+    }
+    .s-row-btn button{
+        margin-right: 10px;
+        padding: 12px 15px;
+    }
+    .s-row-timer{
+        top: 2rem;
+        left: 1rem;
+        padding: 1rem;
+    }
+    .s-row-timer h2{
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+    .s-row-timer #demo{
+        font-size: 1.1rem;
+        /* display: none; */
+    }
+
+
+
+}
+
+
+
+/* 
+                    FOR  MOBILE SCREEN 425PX
+*/
+
+@media only screen and (max-width : 425px) {
+    
+}
