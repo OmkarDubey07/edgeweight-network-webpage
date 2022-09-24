@@ -21,7 +21,7 @@ a{
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
-    /* height: 90vh; */
+    height: 45rem;
     z-index: -99;
     opacity: 0.9;
 }
@@ -625,5 +625,134 @@ a{
 */
 
 @media only screen and (max-width : 425px) {
+   
+    .navbar-section{
+        padding: 1rem 1rem;
+    }
+    .navbar-section .logo img{
+        width: 60px;
+        margin-top: 10px;
+    }
+    .main-section{
+        margin-top: 0;
+        padding: 0rem 2rem;
+    }
+    .main-f-row{
+        flex-direction: column;
+    }
+    .main-f-row .f-row-head{
+        width: 100%;
+    }
+    .main-f-row .f-row-head h1{
+        text-align: center;
+        font-size: 1.1rem ;
+        margin: 1rem 0;
+        line-height: 1.3rem;
+    }
+    .main-f-row .f-row-head h1 br{
+        display: none;
+    }
+    .main-f-row .f-row-head p{
+        display: none;
+    }
+    .f-row-img {
+        width: 100%;
+    }
+    .f-row-img img{
+        top: 0;
+        left: -3.5rem;
+        width: 400px;
+    }
+    .main-s-row{
+        flex-direction: column-reverse;
+    }
+
+    .s-row-timer{
+        top: 0;
+        left: 0;
+        border: none;
+    }
+    .s-row-timer h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.8rem;
+    }
+    .s-row-timer p{
+        font-size: 1rem;
+    }
+    .s-row-btn button{
+        text-align: center;
+        margin-left: 0.5rem;
+        padding: 1rem 1.4rem;
+    }
+    .s-row-btn button a{
+        font-weight: 600;
+    }
+
+                    /*  MEET OUR TEAM */
+
+
+    .team-section{
+        padding: 4rem 1rem;
+    }
+    .team-menu .team{
+        width: 29rem;
+        height:8rem ;
+    }
+    .team-menu .team img{
+        width: 6rem;
+        height: 8rem;
+    }
+    .team-info{
+        padding: 10px;
+    }
+    .team-info h3{
+        font-size: 1.1rem;
+    }
+    .team-menu{
+        row-gap: 5rem;
+    }
+    .team-bg-img{
+        display: none;
+    }
+
+                 /* OUR PARTNERS */
+
+
+    .partner-section{
+        padding: 1rem ;
+    }
+    #slider{
+        height: 150px;
+    }
+    .child img{
+        height: 50px;
+        width: 100px;
+    }
+    #left-btn{
+        margin-left: 1px;
+    } 
+    #right-btn{
+        margin-right: 1px;
+    }
     
+                        /* CONTACT US */
+
+
+    .contact-us{
+        margin-top: 3rem;
+        width: 95vw;
+        padding: 0rem;
+    }
+    .contact-us h3{
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+    .contact-box{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .contact-address{
+        flex-direction: row;
+    }
 }
